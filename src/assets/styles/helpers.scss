@@ -1,0 +1,53 @@
+.flex{
+    display: flex;
+
+    &.space{
+        justify-content: space-between;
+    }
+    &.align-center{
+        align-items: center;
+    }
+
+    &.column{
+        flex-direction: column;
+    }
+
+    &.justify-center{
+        justify-content: center;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn{
+    background-image: linear-gradient(152deg, #63e1d9 0%, #34a0cd 100%);
+    border-radius: 28px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.gap-20{
+    gap: 20px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.icon{
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 11px;
+
+    &.fa-facebook  {
+        padding-inline: 14px;
+    }
+    &.fa-instagram{
+        padding-inline: 12px;
+    }
+}

@@ -1,0 +1,254 @@
+.home {
+    align-items: center;
+
+    >* {
+        padding-bottom: 100px;
+    }
+
+    .main-page {
+        background-color: #181f2b;
+        width: 100%;
+    }
+
+    .page-intro {
+        font-size: 20px;
+        max-width: min-content !important;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 10;
+
+        .curve-img {
+            padding: 0;
+            bottom: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        .intro-text {
+            padding-inline: 70px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            width: 280px;
+            height: 56px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+    }
+
+    .main-features {
+        flex-wrap: wrap;
+        padding-block-end: 150px;
+
+        .main-feature {
+            max-width: 50%;
+            padding-inline: 100px;
+            padding-block: 50px;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            img {
+                max-width: 80px;
+            }
+        }
+    }
+
+    .stay-productive {
+        padding-block-end: 100px;
+        gap: 40px;
+
+        >* {
+            flex: 1;
+        }
+
+        >:last-child {
+            gap: 20px;
+        }
+
+        .see-how-anchor {
+            border-bottom: #62e0d9 solid 1px;
+            color: #62e0d9;
+            max-width: fit-content;
+            cursor: pointer;
+            position: relative;
+            padding-inline-end: 20px;
+
+            p::after {
+                content: "";
+                position: absolute;
+                right: -20px;
+                top: 9px;
+                width: 12px;
+                height: 12px;
+                background: url('@/assets/svgs/icon-arrow.svg') center / contain no-repeat;
+            }
+        }
+
+        font-size: 16px;
+    }
+
+    .profile-cards {
+        padding-inline: 50px;
+        // padding-bottom: 150px;
+
+        img {
+            max-width: 24px;
+            max-height: 24px;
+            border-radius: 50%;
+            margin-inline-end: 10px;
+            align-self: center;
+        }
+
+        gap: 40px;
+
+        .profile-card:first-child {
+            position: relative;
+            // background-color: #202a3c;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -14px;
+                top: -30px;
+                width: 45px;
+                height: 50px;
+                background: url('@/assets/imgs/bg-quotes.png') center / contain no-repeat;
+            }
+        }
+
+        .profile-card {
+            box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+            border-radius: 4px;
+            background-color: #202a3c;
+            padding: 30px;
+            line-height: 21px;
+            gap: 20px;
+        }
+    }
+
+    .sign-up {
+        background-color: #1b2330;
+        padding-block: 40px;
+        margin-top: 20px;
+        text-align: center;
+        gap: 20px;
+        width: 60%;
+        z-index: 1;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+        padding-inline: 100px;
+
+        p {
+            padding-inline: 80px;
+        }
+
+        transform: translateY(220px);
+
+        .sign-up-input {
+            gap: 30px;
+
+            >* {
+                min-height: 50px;
+            }
+
+            input {
+                flex: 2.5;
+                border-radius: 40px;
+                outline: none;
+                padding-inline-start: 20px;
+            }
+
+            button {
+                flex: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .stay-productive {
+
+        >* {
+            max-width: 50%;
+        }
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    .home {
+
+        img {
+            max-width: 100%;
+        }
+
+        .page-intro {
+            min-width: 100%;
+            padding-inline: 30px;
+
+            h2 {
+                font-size: 24px;
+                padding-inline: 10px;
+            }
+
+            .intro-text {
+                padding-inline: 30px;
+                font-size: 14px;
+            }
+        }
+
+        .main-features {
+            flex-direction: column;
+
+            .main-feature {
+                min-width: 100%;
+                padding-inline: 30px;
+            }
+        }
+
+        .stay-productive {
+            flex-direction: column;
+            padding-inline: 25px;
+
+            >:last-child {
+                padding-inline-end: 0;
+            }
+
+            font-size: 14px;
+        }
+
+        .profile-cards {
+            flex-direction: column;
+        }
+
+        .sign-up {
+            padding-inline: 30px;
+            width: 90%;
+            transform: translateY(270px);
+
+
+            .sign-up-input {
+                flex-direction: column;
+                height: auto;
+                gap: 20px;
+            }
+
+            p {
+                padding-inline: 0;
+            }
+        }
+    }
+}
