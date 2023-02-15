@@ -22,6 +22,14 @@
         width: 100%;
     }
 
+    .curve-img {
+        padding: 0;
+        top: 0;
+        transform: translateY(-100%);
+        position: absolute;
+        max-width: 100%;
+    }
+
     .page-intro {
         font-size: 20px;
         max-width: min-content !important;
@@ -29,12 +37,7 @@
         position: relative;
         z-index: 10;
 
-        .curve-img {
-            padding: 0;
-            bottom: 0;
-            position: absolute;
-            z-index: -1;
-        }
+
 
         h2 {
             margin-bottom: 25px;
@@ -59,12 +62,12 @@
         padding-block-end: 150px;
 
         .slide-left-enter-from {
-            transform: translateX(-300px);
+            transform: translateX(-150px);
             opacity: 0;
         }
 
         .slide-right-enter-from {
-            transform: translateX(300px);
+            transform: translateX(150px);
             opacity: 0;
         }
 
@@ -206,17 +209,21 @@
 
 @media (max-width: 900px) {
     .stay-productive {
+        flex-direction: column;
 
-        // >* {
-        //     // max-width: 50%;
-        // }
-
+        img {
+            object-fit: scale-down;
+        }
     }
 }
 
 @media (max-width: 600px) {
 
     .home {
+
+        .main-page {
+            padding-bottom: 0;
+        }
 
         img {
             max-width: 100%;
@@ -239,6 +246,7 @@
 
         .main-features {
             flex-direction: column;
+            padding-bottom: 20px;
 
             .main-feature {
                 min-width: 100%;
@@ -264,7 +272,7 @@
         .sign-up {
             padding-inline: 30px;
             width: 90%;
-            transform: translateY(270px);
+            transform: translateY(180px);
 
 
             .sign-up-input {

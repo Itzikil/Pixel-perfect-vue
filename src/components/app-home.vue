@@ -1,7 +1,7 @@
 <template>
     <!-- <div class="background"> -->
     <section class="home flex justify-center align-items column full main-layout">
-        <div class="page-intro flex column align-center">
+        <div class="full page-intro flex column align-center">
             <Transition name="fade" appear>
                 <img src="../assets/imgs/illustration-intro.png" alt="">
             </Transition>
@@ -10,9 +10,9 @@
                 Access them wherever you need, share and collaborate with
                 friends family, and co-workers</p>
             <button class="btn">Get Started</button>
-            <img class="full curve-img" src="../assets/svgs/bg-curvy-desktop.svg" alt="">
         </div>
         <div class="main-page full main-layout">
+            <img class="full curve-img" src="../assets/svgs/bg-curvy-desktop.svg" alt="">
             <mainFeatures />
             <stayProductive />
             <profileCards />
