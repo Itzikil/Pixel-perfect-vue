@@ -29,10 +29,10 @@
                     <a href="">Terms</a>
                     <a href="">Privacy</a>
                 </div>
-                <div class="flex">
-                    <a href=""><i class="fa fa-twitter icon" ></i></a>
-                    <a href=""><i class="fa fa-facebook icon" ></i></a>
-                    <a href=""><i class="fa fa-instagram icon" ></i></a>
+                <div class="flex link-container">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>

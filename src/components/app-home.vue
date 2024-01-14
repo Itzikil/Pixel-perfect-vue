@@ -13,10 +13,10 @@
         </div>
         <div class="main-page full main-layout">
             <img class="full curve-img" src="../assets/svgs/bg-curvy-desktop.svg" alt="">
-            <mainFeatures />
-            <stayProductive />
+            <mainFeatures id="features"/>
+            <stayProductive id="team"/>
             <profileCards />
-            <signUp />
+            <signUp id="sign in"/>
         </div>
     </section>
     <!-- </div> -->

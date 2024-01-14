@@ -11,7 +11,7 @@
     }
 
     .footer-nav {
-        >* {
+        >*:not(:last-child){
             padding-inline-end: 90px;
             gap: 10px;
         }
@@ -40,6 +40,23 @@
             width: 20px;
             height: 16px;
         }
+
+        .link-container {
+            gap: 20px;
+
+            *>i {
+                font-size: 24px;
+                border: 2px solid #ffffff; /* Add your desired border color */
+                border-radius: 50%; /* Make it a perfect circle */
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px; /* Set a fixed width */
+                height: 40px; /* Set a fixed height */
+                line-height: 40px; /* Vertical centering */
+                text-align: center; 
+            }
+        }
     }
 }
 
@@ -62,6 +79,7 @@
         .footer-nav {
             gap: 20px;
             flex-wrap: wrap;
+
             >* {
                 padding-inline-end: 0px;
                 padding-block-end: 20px;
@@ -91,6 +109,8 @@
             >:last-child {
                 align-self: center;
             }
+
         }
+
     }
 }

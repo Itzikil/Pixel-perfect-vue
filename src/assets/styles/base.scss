@@ -59,6 +59,10 @@
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   color: var(--color-text);
@@ -76,7 +80,11 @@ body {
   overflow-x: hidden;
 }
 
-h1 ,h2 ,h3 h4 ,h5 ,h6 {
+h1,
+h2,
+h3 h4,
+h5,
+h6 {
   font-family: Raleway;
 
 }
