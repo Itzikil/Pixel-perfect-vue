@@ -25,9 +25,10 @@
     .curve-img {
         padding: 0;
         top: 0;
-        transform: translateY(-100%);
+        transform: translateY(-99%);
         position: absolute;
-        max-width: 100%;
+        // max-width: ;
+        min-width: 98.5vw;
     }
 
     .page-intro {
